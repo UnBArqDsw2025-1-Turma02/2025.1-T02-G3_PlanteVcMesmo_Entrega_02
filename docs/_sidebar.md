@@ -1,12 +1,10 @@
 <!-- docs/_sidebar.md -->
 
-- [Home](/docs)
-- [Projetos](/docs/Projeto/Projeto.md)
+- [Sobre o Projeto](/)
+- [Projetos](/Projeto/Projeto.md)
 
-- **Base**
-  - [1. Desenho de Software (Base)](/docs/Base/1.Base.md)
-    - [1.1. Design Sprint](/docs/Base/1.1.DesignSprint.md)
-    - [1.2. Artefato Generalista](/docs/Base/1.2.ArtefatoGeneralista.md)
-    - [1.3. Modelagem BPMN](/docs/Base/1.3.ModelagemBPMN.md)
-    - [1.4. Participações - Base](/docs/Base/1.4.ParticipacoesBase.md)
-    - [1.5. Iniciativas Extras - Base](/docs/Base/1.5.IniciativasExtras.md)
+- **Modelagem**
+  - [2. Desenho de Software (Modelagem)](/Modelagem/modelagem.md)
+    - [2.1. Modelagem UML Estática](/Modelagem/estatica/index.md)
+    - [2.2. Modelagem UML Dinâmica](/Modelagem/dinamica/index.md)
+    - [2.3. Modelagem UML Organizacional ou Casos de Uso](Modelagem/organizacional/index.md)
