@@ -8,6 +8,7 @@ Esse diagrama é especialmente útil nas fases iniciais do desenvolvimento, como
 
 ## Diagrama UML
 ![Diagrama de Casos de Uso](../../assets/diagrama-uc.png)
+Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores: Usuário, Administrador, Google Cloud e LLM. O Usuário gerencia plantas, realiza cadastro/login, visualiza fórum, interage com LLM, cria postagem e etc. Já o Administrador tem funções essenciais como adicionar, editar e excluir postagens. Por fim, há a interação do sistema com os serviços externos (GoogleCloud e LLM) para suporte com funcionalidades específicas do sistema.
 
 ## Template para criação de Casos de Uso
 

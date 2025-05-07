@@ -9,6 +9,8 @@ Ele é especialmente útil na fase de análise e design do sistema,pois facilita
 ## Diagrama UML
 ![Diagrama de Classes](../../assets/diagrama-classe.png)
 
+Descrição: O diagrama desenvolvido contém 11 classes sendo uma delas o Auditable, uma classe abstrata usada para herança e controle de auditoria do sistema, além de uma classe terceirizada, a Product, que contém dados que serão fornecidos através de uma API. Por fim, o diagrama traz os principais envolvidos no sistema como usuário, planta, comentários, Post e etc.
+
 
 ## Histórico de Versão
 | Versão | Data       | Alterações Principais                             | Autor(es)        |
