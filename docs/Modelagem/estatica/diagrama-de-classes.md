@@ -6,6 +6,9 @@ O Diagrama de Classes é um dos principais diagramas da UML (Unified Modeling La
 
 Ele é especialmente útil na fase de análise e design do sistema,pois facilita a identificação das classes a serem implementadas, suas responsabilidades e as interações entre elas. Ao proporcionar uma visão clara e organizada da arquitetura do sistema, o Diagrama de Classes ajuda a garantir que os requisitos funcionais e não funcionais sejam atendidos de forma eficaz.
 
+## Diagrama UML
+![Diagrama de Classes](../../assets/diagrama-classe.png)
+
 
 ## Histórico de Versão
 | Versão | Data       | Alterações Principais                             | Autor(es)        |
