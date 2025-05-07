@@ -55,7 +55,7 @@ Esse diagrama é especialmente útil nas fases iniciais do desenvolvimento, como
 
 Autor: Caio Lamego
 
-### UC0 - Realizar Cadastro
+### UC04 - Realizar Cadastro
 
 |  |  |
 |--------------------|-----------------------------------------------|
