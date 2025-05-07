@@ -6,6 +6,11 @@ O Diagrama de Componentes é uma representação visual da estrutura do sistema 
 
 Além disso, o Diagrama de Componentes é útil para definir quais são os componentes reutilizáveis, descobrir dependências entre componentes e identificar possíveis problemas de integração. Ele também pode ser usado para documentar a arquitetura do sistema e facilitar a comunicação entre os membros da equipe de desenvolvimento.
 
+## Diagrama UML
+![Diagrama de Componentes](../../assets/diagrama-componentes.png)
+
+Descrição: O Diagrama de Componentes traz a arquitetura do Plante Vc Mesmo! dividido em quatro subsistemas (WebServer, GeminiAI, GoogleCloud e DataBase). O WebServer gerencia interações do usuário, já o GeminAI é responsável pela geração de conteúdo quando há a comunicação com o WebServer, enquanto o GoogleCloud será utilizado para funcionalidades de Shopping, Gmail e agendamentos no Calendar. Por fim, o DataBase é integrado ao sistema para garantir a integridade e persistência dos dados.
+
 ## Histórico de Versão
 | Versão | Data       | Alterações Principais                             | Autor(es)        |
 |--------|------------|---------------------------------------------------|:----------------:|

@@ -6,6 +6,20 @@ Uma máquina de estados é um dispositivo que armazena o status de um objeto em 
 
 O diagrama de estados é útil para modelar sistemas orientados a eventos por conta do seu comportamento dinâmico que representa com clareza comportamentos complexos e dependentes de ações. Essa abordagem pode ser aplicada durante todas as fases de um projeto de software, desde o levantamento de requisitoss até a implementação.
 
+## Diagrama UML
+Descrição: O Diagrama de Estados do Plante Vc Mesmo! foi dividido entre os quatro principais elementos, sendo eles: Registro de Plantas, Login/Autenticação, LLM e o estado das Postagens. Com isso, obtendo o fluxo de estados destes elementos, fica claro o comportamento essencial do sistema.
+### Diagrama de Estados - Registro de Plantas
+![DE - Plantas](../../assets/de-plantas.png)
+
+### Diagrama de Estados - Login
+![DE - Login](../../assets/de-login.png)
+
+### Diagrama de Estados - LLM
+![DE - Login](../../assets/de-llm.png)
+
+### Diagrama de Estados - Postagens
+![DE - Login](../../assets/de-postagem.png)
+
 ## Histórico de Versão
 | Versão | Data       | Alterações Principais                             | Autor(es)        |
 |--------|------------|---------------------------------------------------|:----------------:|
