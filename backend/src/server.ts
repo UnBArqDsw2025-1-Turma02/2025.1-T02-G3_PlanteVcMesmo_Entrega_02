@@ -1,5 +1,5 @@
 import express from "express";
-import logger from "./infra/logger";
+import logger from "@/infra/logger";
 import { Request, Response } from "express";
 
 const app = express();
