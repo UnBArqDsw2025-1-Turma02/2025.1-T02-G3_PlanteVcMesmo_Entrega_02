@@ -55,6 +55,44 @@ Esse diagrama é especialmente útil nas fases iniciais do desenvolvimento, como
 
 Autor: Caio Lamego
 
+### UC0 - Realizar Cadastro
+
+|  |  |
+|--------------------|-----------------------------------------------|
+| **Descrição**      | Permite que o usuário crie uma conta no sistema “Plante Você Mesmo” para acessar funcionalidades como registro de plantações, acompanhamento e dicas personalizadas. |
+| **Ator(es)**       | Usuário (pessoa interessada em plantar), Sistema |
+| **Pré-Requisitos** | O usuário deve ter acesso à internet e dispor de um dispositivo compatível (celular, tablet ou computador). |
+
+| **Fluxo Principal** | 
+|------------------------| 
+|1. O usuário acessa a página inicial do sistema. | 
+|2. O usuário seleciona a opção “Cadastrar-se”. | 
+|3. O sistema apresenta o formulário de cadastro.|  
+|4. O usuário preenche os campos obrigatórios (nome, e-mail, senha, etc.).|  
+|5. O usuário confirma o cadastro.|  
+|6. O sistema valida as informações. | 
+|7. O sistema cria a conta e exibe mensagem de sucesso.  |
+|8. O usuário é redirecionado para a tela inicial logado no sistema. |
+
+| **Fluxo Alternativo** |
+|------------------------|  
+FA01. (Após FP04) O usuário opta por se cadastrar usando redes sociais (Google, Facebook).  
+→ O sistema redireciona para a autenticação da rede social.  
+ → Após a autenticação, o sistema cria a conta automaticamente e exibe mensagem de sucesso. |
+
+| **Fluxo de Exceção** |
+|------------------------|  
+FE01. (No FP06) O e-mail informado já está cadastrado.  
+→ O sistema exibe mensagem de erro e solicita um novo e-mail.  
+
+FE02. (No FP06) O usuário deixa campos obrigatórios em branco.  
+→ O sistema exibe mensagens de validação e impede o avanço até que sejam corrigidos.  
+
+FE03. (No FP06) Falha na conexão com o servidor.  
+→ O sistema exibe mensagem de erro e solicita que o usuário tente novamente mais tarde. |
+
+Autor: Rafael Matuda
+
 ### UC05 - Login na Google
 |  |  |
 |--------------------|-----------------------------------------------|
