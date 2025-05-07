@@ -22,7 +22,38 @@ Esse diagrama é especialmente útil nas fases iniciais do desenvolvimento, como
 
 | Código | Nome do caso de uso |
 |--------|---------------------|
+|  UC02  |    Criação de Plantas  |
 |  UC05  |    Login na Google  |
+|  UC09  |    Interagir com LLM  |
+
+### UC02 - Criação de Plantas
+|                      |                                                                                             |
+|----------------------|---------------------------------------------------------------------------------------------|
+| **Descrição**        | Este Caso de Uso deve seguir um fluxo onde o usuário Crie uma Nova Planta no seu perfil, sendo necessário, dessa maneira, informar nome, descrição e foto, para que esta seja salva corretamente no seu perfil. |
+| **Ator(es)**         | Usuário do aplicativo "Plante Você Mesmo"                                                   |
+| **Pré-Requisitos**   | O usuário deve estar logado no aplicativo e ter acesso à funcionalidade de criação de plantas. |
+
+| **Fluxo Principal**  |
+|----------------------|
+| 1. Usuário acessa seu perfil.  |
+| 2. Usuário clica no botão de Adicionar Planta. (FA1)  |
+| 3. O usuário insere o nome, descrição da Planta.|
+| 4. O usuário faz upload da foto da planta. (FE3)|
+| 5. O usuário clica para confirmar. (FE2)|
+| 9. O sistema exibe uma confirmação de que a planta foi criada com sucesso. (FE1) |
+| 10. O usuário visualiza a nova planta em seu perfil. |
+
+| **Fluxo Alternativo** |
+|------------------------|
+| FA1. Se o usuário cancelar a criação da planta, o sistema retorna à tela inicial da área de plantas.  |
+
+| **Fluxo de Exceção** |
+|------------------------|
+| FE1. Se ocorrer um erro ao salvar a planta, o sistema exibe uma mensagem de erro. |
+| FE2. Se o usuário não preencher algum campo, o sistema solicita que o usuário preencha todos.  |
+| FE3. Se o formato da foto enviada for inválido, o sistema solicita ao usuário que envie um arquivo de imagem válido.  |
+
+Autor: Caio Lamego
 
 ### UC05 - Login na Google
 |  |  |
