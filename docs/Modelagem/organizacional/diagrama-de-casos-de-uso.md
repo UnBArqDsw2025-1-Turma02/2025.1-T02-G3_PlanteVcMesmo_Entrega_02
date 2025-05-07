@@ -21,8 +21,20 @@ Esse diagrama é especialmente útil nas fases iniciais do desenvolvimento, como
 ## Tabela de Casos de Uso
 
 | Código | Nome do caso de uso |
-|-------|----------------------|
-| UC01   | Nome do Caso de Uso 1 |
+|--------|---------------------|
+|  UC05  |    Login na Google  |
+
+### UC05 - Login na Google
+|  |  |
+|--------------------|-----------------------------------------------|
+| **Descrição**      | Permite que um usuário acesse a plataforma utilizando sua conta da Google |
+| **Ator(es)**       | Um usuário com uma conta Google        |
+| **Pré-Requisitos** | O usuário já deve possuir uma conta na Google |
+| **Fluxo Principal** | 1. O usuário acessa a tela de login<br> 2. O usuário clica no botão "Login com Google"<br> 3. O usuário é redirecionado para a página de autenticação do Google<br> 4. O usuário a conta desejada e informa a sua senha<br> 5. O Google autentica o usuário e redireciona de volta com um token de autorização<br> 6. O sistema busca os dados do usuário nas API's da Google<br> 7. O sistema gera uma sessão e redireciona o usuário para a página inicial   |
+| **Fluxo Alternativo** | **FA01:** O usuário cancela a autorização na tela do Google e o sistema retorna para a tela de login sem a autenticação |
+| **Fluxo de Exceção** | **FE01:** O token informado é inválido ou expirado eo sistema exibe uma mensagem de erro |
+
+Autor: Arthur Ribeiro
 
 ## Histórico de Versão
 | Versão | Data       | Alterações Principais                             | Autor(es)        |
