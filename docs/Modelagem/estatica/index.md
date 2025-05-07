@@ -9,6 +9,11 @@
 
 ## Referências
 
+**Rational Software Architect Standard Edition - Class Diagram**. Disponível em: <https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=structure-class-diagrams>. Acesso em: 6 maio 2025.
+
+**Rational Software Architect Standard Edition - Services Component Diagram**. Disponível em: <https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=services-component-diagrams>. Acesso em: 7 maio 2025.
+
+
 ## Histórico de Versão
 
 | Versão | Data       | Alterações Principais                             | Autor(es)        |
