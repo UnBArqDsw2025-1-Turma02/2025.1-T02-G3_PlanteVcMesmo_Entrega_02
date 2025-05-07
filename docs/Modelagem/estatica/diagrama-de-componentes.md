@@ -6,6 +6,9 @@ O Diagrama de Componentes é uma representação visual da estrutura do sistema 
 
 Além disso, o Diagrama de Componentes é útil para definir quais são os componentes reutilizáveis, descobrir dependências entre componentes e identificar possíveis problemas de integração. Ele também pode ser usado para documentar a arquitetura do sistema e facilitar a comunicação entre os membros da equipe de desenvolvimento.
 
+## Diagrama UML
+![Diagrama de Componentes](../../assets/diagrama-componentes.png)
+
 ## Histórico de Versão
 | Versão | Data       | Alterações Principais                             | Autor(es)        |
 |--------|------------|---------------------------------------------------|:----------------:|
