@@ -24,12 +24,14 @@ Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores
 | UC03   | Editar Planta                 | Usuário           |
 | UC04   | Realizar Cadastro             | Usuário           |
 | UC05   | Login com Google              | Usuário           |
-| UC06   | Criar Postagem                | Usuário           |
+| UC06*   | Criar Postagem                | Usuário           |
 | UC07   | Interagir com Postagem        | Usuário           |
 | UC08   | Gerenciar Postagem            | Administrador     |
 | UC09   | Interagir com LLM             | Usuário           |
 
 </center>
+
+\* O caso de uso UC06 é uma possível implementação do projeto, que não estará presente de forma obrigatória. Isso, visto que deixar os usuários postarem livremente pode gerar problemas de informações falsas, imagens impróprias, entre outros. Portanto, o caso de uso UC06 pode ser implementado ou não, dependendo do quanto a equipe progredir com o projeto.
 
 <font size="3"><p style="text-align: center"><b>Autor: [Arthur Ribeiro e Sousa][artrsousa1], 2025 </b> </p></font>
 
@@ -220,6 +222,7 @@ FE03. (No FP06) Falha na conexão com o servidor.
 | 1.0.0  | 06-05-2025 | Adição de fundamentação teórica | [Arthur Ribeiro e Sousa][artrsousa1], [Caio Falcão Habibe][CaioHabibe], [Caio Felipe Rocha][caio-felipee], [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin], [Mateus Vieira Rocha da Silva][mateusvrs], [Rafael Melo Matuda][rmatuda] |
 | 1.0.1  | 06-05-2025 | Adição do UC01, UC02, UC03, UC04, UC05, UC06, UC07, UC08, UC09 | [Arthur Ribeiro e Sousa][artrsousa1], [Caio Falcão Habibe][CaioHabibe], [Caio Felipe Rocha][caio-felipee], [Caio Magalhães Lamego][caiolamego], [Davi Araújo Bady Casseb][dcasseb], [Gabriel Fernando De Jesus Silva][MMcLovin], [Mateus Vieira Rocha da Silva][mateusvrs], [Matheus de Siqueira Brant][MatheussBrant], [Pedro Henrique Fernandino da Silva][PedroHenrique061], [Rafael Melo Matuda][rmatuda] |
 | 1.0.2  | 07-05-2025 | Correção do UC08 e adição de título e rodapé nas tabelas | [Gabriel Fernando De Jesus Silva][MMcLovin] |
+| 1.0.3  | 08-05-2025 | Adição de nota informativa para o caso de uso UC06 | [Mateus Vieira Rocha da Silva][mateusvrs] |
 
 [artrsousa1]: https://github.com/artrsousa1  
 [CaioHabibe]: https://github.com/CaioHabibe  
