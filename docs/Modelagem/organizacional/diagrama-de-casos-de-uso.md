@@ -8,10 +8,17 @@ Esse diagrama é especialmente útil nas fases iniciais do desenvolvimento, como
 
 ## Diagrama UML
 
+<font size="3"><p style="text-align: center"><b>Figura 1: Diagrama de casos de uso </b> </p></font>
+
 ![Diagrama de Casos de Uso](../../assets/diagrama-uc.png)
-Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores: Usuário, Administrador, Google Cloud e LLM. O Usuário gerencia plantas, realiza cadastro/login, visualiza fórum, interage com LLM, cria postagem e etc. Já o Administrador tem funções essenciais como adicionar, editar e excluir postagens. Por fim, há a interação do sistema com os serviços externos (GoogleCloud e LLM) para suporte com funcionalidades específicas do sistema.
+
+<font size="3"><p style="text-align: center"><b>Autor:</b> [Arthur Ribeiro e Sousa][artrsousa1], [Caio Felipe Rocha][caio-felipee], [Caio Falcão Habibe][CaioHabibe], [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin], [Mateus Vieira Rocha da Silva][mateusvrs], [Rafael Melo Matuda][rmatuda], 2025 </p></font>
+
+**Descrição**: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores: Usuário, Administrador, Google Cloud e LLM. O Usuário gerencia plantas, realiza cadastro/login, visualiza fórum, interage com LLM, cria postagem e etc. Já o Administrador tem funções essenciais como adicionar, editar e excluir postagens. Por fim, há a interação do sistema com os serviços externos (GoogleCloud e LLM) para suporte com funcionalidades específicas do sistema.
 
 ## Especificação dos Casos de Uso
+
+Escolhemos alguns dos principais casos de uso para que cada membro fizesse uma especificação de caso uso, que estão presentes nas tabelas de 2 a 10, sendo a tabela 1 um resumo das especificações realizadas:
 
 <font size="3"><p style="text-align: center"><b>Tabela 1: tabela resumida das especificações dos casos de uso </b> </p></font>
 
