@@ -144,6 +144,15 @@ Autor: Arthur Ribeiro
 | **Fluxo de Exceção**   | **FE01**: Ocorre uma falha de conexão: o sistema exibe uma mensagem de erro e orienta o usuário a tentar novamente. |
 
 Autor: Caio Habibe
+### UC08 - Gerenciar Postagem
+|  |  |
+|--------------------|-----------------------------------------------|
+| **Descrição**      | O administrador deseja editar ou excluir uma postagem publicada |
+| **Ator(es)**       | Administrador |
+| **Pré-Requisitos** | Estar autenticado no sistema e ter pelo menos uma postagem publicada |
+| **Fluxo Principal** | 1. O administrador acessa a área de gerenciamento de postagens<br>2. O sistema exibe a lista de postagens publicadas<br>3. O administrador seleciona uma postagem<br>4. O sistema exibe as opções de gerenciamento (editar/excluir)<br>5. O administrador escolhe a opção de edição<br>6. O sistema abre a postagem em modo de edição<br>7. O administrador faz as alterações e salva<br>7.1 Caso ocorra um erro ao salvar, **FE01**<br>8. O sistema atualiza a postagem e retorna à visualização da lista |
+| **Fluxo Alternativo** | **FA01: O administrador escolhe excluir a postagem**<br>1. O administrador clica em "Excluir"<br>2. O sistema solicita confirmação<br>3. O administrador confirma a exclusão<br>4. O sistema remove a postagem da exibição pública |
+| **Fluxo de Exceção** | **FE01: Erro ao salvar a edição da postagem**<br>1. O sistema exibe uma mensagem de erro<br>2. O administrador pode tentar salvar novamente ou cancelar a edição |
 
 ### UC09 - Interagir com LLM
 |  |  |
@@ -159,11 +168,22 @@ Autor: Caio Felipe
 
 ## Histórico de Versão
 
-| Versão | Data       | Alterações Principais                             | Autor(es)        |
-|--------|------------|---------------------------------------------------|:----------------:|
+| Versão | Data | Alterações Principais | Autor(es) |
+| ------ | ---- | --------------------- | :-------: |
 | 1.0.0  | 06-05-2025 | Adição de fundamentação teórica                | Arthur Ribeiro, Mateus Vieira, Caio Felipe <br> Caio Habibe, Caio Lamego, Gabriel Fernando <br> Rafael Matuda   |
 | 1.0.1  | 06-05-2025 | Adição do UC02 e UC04 | Caio Lamego, Rafael Matuda |
 | 1.0.2  | 06-05-2025 | Adição do UC09 | Caio Felipe |
 | 1.0.3  | 06-05-2025 | Adição do UC05 | Arthur Ribeiro |
 | 1.0.4  | 06-05-2025 | Adição do UC07 | Caio Habibe |
 | 1.0.5  | 06-05-2025 | Adição do UC01 | Matheus Brant |
+
+[artrsousa1]: https://github.com/artrsousa1  
+[CaioHabibe]: https://github.com/CaioHabibe  
+[caio-felipee]: https://github.com/caio-felipee  
+[caiolamego]: https://github.com/caiolamego  
+[dcasseb]: https://github.com/dcasseb  
+[MMcLovin]: https://github.com/MMcLovin  
+[mateusvrs]: https://github.com/mateusvrs  
+[MatheussBrant]: https://github.com/MatheussBrant  
+[PedroHenrique061]: https://github.com/PedroHenrique061  
+[rmatuda]: https://github.com/rmatuda  
