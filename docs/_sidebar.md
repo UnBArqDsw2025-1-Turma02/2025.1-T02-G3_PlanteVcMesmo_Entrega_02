@@ -13,3 +13,4 @@
       - [2.2.2. Diagrama de Estados](/Modelagem/dinamica/diagrama-de-estados.md)
     - [2.3. Modelagem de Casos de Uso](Modelagem/organizacional/index.md)
       - [2.3.1. Diagrama de Casos de Uso](Modelagem/organizacional/diagrama-de-casos-de-uso.md)
+    - [2.4. Participações](Projeto/participacoes.md)
