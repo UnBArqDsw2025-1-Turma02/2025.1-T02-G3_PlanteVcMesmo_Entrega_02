@@ -11,18 +11,31 @@ Esse diagrama é especialmente útil nas fases iniciais do desenvolvimento, como
 ![Diagrama de Casos de Uso](../../assets/diagrama-uc.png)
 Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores: Usuário, Administrador, Google Cloud e LLM. O Usuário gerencia plantas, realiza cadastro/login, visualiza fórum, interage com LLM, cria postagem e etc. Já o Administrador tem funções essenciais como adicionar, editar e excluir postagens. Por fim, há a interação do sistema com os serviços externos (GoogleCloud e LLM) para suporte com funcionalidades específicas do sistema.
 
-## Tabela de Casos de Uso
+## Especificação dos Casos de Uso
 
-| Código | Nome do caso de uso        |
-|--------|----------------------------|
-| UC01   | Gerenciar Calendário       |
-| UC02   | Criação de Plantas         |
-| UC04   | Realizar Cadastro          |
-| UC05   | Login na Google            |
-| UC05   | Interagir com postagem     |
-| UC09   | Interagir com LLM          |
+<font size="3"><p style="text-align: center"><b>Tabela 1: tabela resumida das especificações dos casos de uso </b> </p></font>
+
+<center>
+
+| Código | Nome do Caso de Uso           | Ator Principal    |
+| ------ | ----------------------------- | ----------------- |
+| UC01   | Gerenciar Calendário          | Usuário           |
+| UC02   | Criar Planta                  | Usuário           |
+| UC03   | Editar Planta                 | Usuário           |
+| UC04   | Realizar Cadastro             | Usuário           |
+| UC05   | Login com Google              | Usuário           |
+| UC06   | Criar Postagem                | Usuário           |
+| UC07   | Interagir com Postagem        | Usuário           |
+| UC08   | Gerenciar Postagem            | Administrador     |
+| UC09   | Interagir com LLM             | Usuário           |
+
+</center>
+
+<font size="3"><p style="text-align: center"><b>Autor: [Arthur Ribeiro e Sousa][artrsousa1], 2025 </b> </p></font>
 
 ### UC01 - Gerenciar Calendário
+
+<font size="3"><p style="text-align: center"><b>Tabela 2: especificação do caso de uso UC01</b> </p></font>
 
 |                      |                                                                                             |
 |----------------------|---------------------------------------------------------------------------------------------|
@@ -50,10 +63,13 @@ Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores
 | **FE1** - Falha ao salvar o aviso: o sistema exibe uma mensagem de erro e solicita nova tentativa. |
 | **FE2** - Falha ao enviar lembrete: o sistema registra a falha e tenta reprogramar o envio. |
 
-Autor: Matheus Brant
+<font size="3"><p style="text-align: center"><b>Autor:</b> [Matheus de Siqueira Brant][MatheussBrant], 2025</p></font>
 
 
 ### UC02 - Criação de Plantas
+
+<font size="3"><p style="text-align: center"><b>Tabela 3: especificação do caso de uso UC02</b> </p></font>
+
 |                      |                                                                                             |
 |----------------------|---------------------------------------------------------------------------------------------|
 | **Descrição**        | Este Caso de Uso deve seguir um fluxo onde o usuário Crie uma Nova Planta no seu perfil, sendo necessário, dessa maneira, informar nome, descrição e foto, para que esta seja salva corretamente no seu perfil. |
@@ -80,9 +96,13 @@ Autor: Matheus Brant
 | FE2. Se o usuário não preencher algum campo, o sistema solicita que o usuário preencha todos.  |
 | FE3. Se o formato da foto enviada for inválido, o sistema solicita ao usuário que envie um arquivo de imagem válido.  |
 
-Autor: Caio Lamego
+<font size="3"><p style="text-align: center"><b>Autor:</b> [Caio Magalhães Lamego][caiolamego], 2025</p></font>
+
 
 ### UC03 - Edição de Planta
+
+<font size="3"><p style="text-align: center"><b>Tabela 4: especificação do caso de uso UC03</b> </p></font>
+
 |  |  |
 |--------------------|-----------------------------------------------|
 | **Descrição**      | Este caso de uso permite que o usuário modifique informações sobre uma planta já cadastrada no sistema, incluindo dados básicos, rotina de cuidados e imagens. |
@@ -92,9 +112,11 @@ Autor: Caio Lamego
 | **Fluxo Alternativo** | FA01. Trocar fotografia da planta<br>FA01.1. No passo FP03, o usuário seleciona a opção para trocar a foto da planta.<br>FA01.2. O sistema apresenta opções para fazer upload de uma nova foto, tirar uma foto com a câmera ou escolher uma imagem da galeria.<br>FA01.3. O usuário seleciona o método desejado e fornece a nova imagem. [FE05]<br>FA01.4. O sistema processa e armazena temporariamente a nova imagem.<br>FA01.5. O sistema retorna ao passo FP03 do fluxo principal.<br><br>FA02. Cancelar edição<br>FA02.1. Em qualquer ponto após o passo FP02, o usuário seleciona a opção "Cancelar".<br>FA02.2. O sistema exibe uma mensagem perguntando se o usuário deseja descartar as alterações não salvas.<br>FA02.3. O usuário confirma que deseja cancelar a edição.<br>FA02.4. O sistema descarta todas as alterações não salvas.<br>FA02.5. O caso de uso é encerrado e o sistema retorna para a visualização anterior.<br><br>FA03. Pular edição da rotina de cuidados<br>FA03.1. No passo FP04, o usuário decide não editar a rotina de cuidados.<br>FA03.2. O sistema mantém as configurações atuais da rotina de cuidados.<br>FA03.3. O fluxo continua no passo FP08. |
 | **Fluxo de Exceção** | FE01. Valor inválido na rotina de cuidados<br>FE01.1. No passo FP06, o usuário insere um valor inválido para algum parâmetro da rotina (como frequência negativa de rega).<br>FE01.2. O sistema exibe uma mensagem de erro indicando o problema específico.<br>FE01.3. O sistema mantém o formulário aberto com os dados inseridos, destacando o campo com erro.<br>FE01.4. O usuário corrige o valor ou cancela a operação.<br>FE01.5. O fluxo retorna ao passo FP06.<br><br>FE02. Falha ao salvar<br>FE02.1. No passo FP08, ocorre uma falha técnica ao tentar salvar as alterações.<br>FE02.2. O sistema exibe uma mensagem informando sobre o problema.<br>FE02.3. O sistema oferece opções para tentar novamente ou salvar um rascunho das alterações.<br>FE02.4. O usuário escolhe uma das opções.<br>FE02.5. Se escolher tentar novamente, o fluxo retorna ao passo FP08.<br>FE02.6. Se escolher salvar rascunho, o sistema armazena as alterações localmente e o caso de uso é encerrado.<br><br>FE03. Dados inválidos<br>FE03.1. No passo FP09, o sistema detecta dados inválidos ou inconsistentes.<br>FE03.2. O sistema exibe mensagens específicas para cada campo com problema.<br>FE03.3. O sistema mantém o formulário aberto com os dados inseridos, destacando os campos com erro.<br>FE03.4. O usuário corrige os dados ou cancela a operação.<br>FE03.5. Se o usuário corrigir os dados, o fluxo retorna ao passo FP09.<br><br>FE04. Falha na sincronização com o Google Calendar<br>FE04.1. No passo FP12, ocorre uma falha na sincronização com o Google Calendar.<br>FE04.2. O sistema registra a falha e salva os lembretes localmente.<br>FE04.3. O sistema informa ao usuário sobre a falha na sincronização e que os lembretes estão disponíveis apenas na plataforma.<br>FE04.4. O sistema oferece a opção de tentar sincronizar novamente mais tarde.<br>FE04.5. O fluxo continua no passo FP13.<br><br>FE05. Falha no processamento da imagem<br>FE05.1. No passo FA01.3, ocorre um problema ao processar a imagem (tamanho muito grande, formato incompatível, etc.).<br>FE05.2. O sistema exibe uma mensagem informando o problema específico.<br>FE05.3. O sistema oferece orientações sobre os requisitos da imagem.<br>FE05.4. O usuário fornece uma nova imagem ou cancela a operação.<br>FE05.5. Se o usuário fornecer uma nova imagem, o fluxo retorna ao passo FA01.3. |
 
-Autor: Davi Araújo
+<font size="3"><p style="text-align: center"><b>Autor:</b> [Davi Araújo Bady Casseb][dcasseb], 2025</p></font>
 
 ### UC04 - Realizar Cadastro
+
+<font size="3"><p style="text-align: center"><b>Tabela 5: especificação do caso de uso UC04</b> </p></font>
 
 |  |  |
 |--------------------|-----------------------------------------------|
@@ -130,9 +152,13 @@ FE02. (No FP06) O usuário deixa campos obrigatórios em branco.
 FE03. (No FP06) Falha na conexão com o servidor.  
 → O sistema exibe mensagem de erro e solicita que o usuário tente novamente mais tarde. |
 
-Autor: Rafael Matuda
+<font size="3"><p style="text-align: center"><b>Autor:</b> [Rafael Melo Matuda][rmatuda], 2025</p></font>
+
 
 ### UC05 - Login na Google
+
+<font size="3"><p style="text-align: center"><b>Tabela 6: especificação do caso de uso UC05</b> </p></font>
+
 |  |  |
 |--------------------|-----------------------------------------------|
 | **Descrição**      | Permite que um usuário acesse a plataforma utilizando sua conta da Google |
@@ -142,9 +168,11 @@ Autor: Rafael Matuda
 | **Fluxo Alternativo** | **FA01:** O usuário cancela a autorização na tela do Google e o sistema retorna para a tela de login sem a autenticação |
 | **Fluxo de Exceção** | **FE01:** O token informado é inválido ou expirado e o sistema exibe uma mensagem de erro |
 
-Autor: Arthur Ribeiro
+<font size="3"><p style="text-align: center"><b>Autor:</b> [Arthur Ribeiro e Sousa][artrsousa1], 2025</p></font>
 
 ### UC06 - Criar postagem
+
+<font size="3"><p style="text-align: center"><b>Tabela 7: especificação do caso de uso UC06</b> </p></font>
 
 |  |  |
 |--------------------|-----------------------------------------------|
@@ -155,9 +183,11 @@ Autor: Arthur Ribeiro
 | **Fluxo Alternativo** | **FA01: O usuário salva a postagem como rascunho**<br>1.  O usuário preenche parcialmente o formulário<br>2. O usuário clica no botão “Salvar como rascunho”<br>3. O sistema salva os dados incompletos como rascunho<br>4 .O sistema confirma que o rascunho foi salvo com sucesso|
 | **Fluxo de Exceção** | **FE01: Dados obrigatórios não preenchidos**<br>1. O sistema identifica que título ou conteúdo não foram preenchidos<br>2 .O sistema exibe uma mensagem de erro solicitando o preenchimento dos campos obrigatórios<br><br>**FE02:  Falha ao salvar a postagem**<br>1. O sistema tenta salvar a postagem, mas ocorre um erro no banco de dados<br>2 .O sistema exibe uma mensagem de erro informando que não foi possível concluir a operação e sugere tentar novamente mais tarde|
 
-Autor: Pedro Henrique
+<font size="3"><p style="text-align: center"><b>Autor:</b> [Pedro Henrique Fernandino da Silva][PedroHenrique061], 2025</p></font>
 
 ### UC07 - Interagir com postagem
+
+<font size="3"><p style="text-align: center"><b>Tabela 8: especificação do caso de uso UC07</b> </p></font>
 
 |  |  |
 |--------------------|-----------------------------------------------|
@@ -168,18 +198,27 @@ Autor: Pedro Henrique
 | **Fluxo Alternativo**  | **FA01**: O usuário decide cancelar a interação antes de confirmar.<br>**FA02**: O usuário escolhe mais de uma opção de interação (por exemplo, curtir e comentar). O sistema registra todas as interações realizadas. |
 | **Fluxo de Exceção**   | **FE01**: Ocorre uma falha de conexão: o sistema exibe uma mensagem de erro e orienta o usuário a tentar novamente. |
 
-Autor: Caio Habibe
+<font size="3"><p style="text-align: center"><b>Autor:</b> [Caio Falcão Habibe][CaioHabibe], 2025</p></font>
+
 ### UC08 - Gerenciar Postagem
+
+<font size="3"><p style="text-align: center"><b>Tabela 9: especificação do caso de uso UC08</b> </p></font>
+
 |  |  |
 |--------------------|-----------------------------------------------|
-| **Descrição**      | O administrador deseja editar ou excluir uma postagem publicada |
-| **Ator(es)**       | Administrador |
+| **Descrição**      | Permite ao administrador criar, editar ou excluir postagens no sistema |
+| **Ator(es)**       | Administrador, **Sistema** (validações e processamento) |
 | **Pré-Requisitos** | Estar autenticado no sistema e ter pelo menos uma postagem publicada |
-| **Fluxo Principal** | 1. O administrador acessa a área de gerenciamento de postagens<br>2. O sistema exibe a lista de postagens publicadas<br>3. O administrador seleciona uma postagem<br>4. O sistema exibe as opções de gerenciamento (editar/excluir)<br>5. O administrador escolhe a opção de edição<br>6. O sistema abre a postagem em modo de edição<br>7. O administrador faz as alterações e salva<br>7.1 Caso ocorra um erro ao salvar, **FE01**<br>8. O sistema atualiza a postagem e retorna à visualização da lista |
-| **Fluxo Alternativo** | **FA01: O administrador escolhe excluir a postagem**<br>1. O administrador clica em "Excluir"<br>2. O sistema solicita confirmação<br>3. O administrador confirma a exclusão<br>4. O sistema remove a postagem da exibição pública |
-| **Fluxo de Exceção** | **FE01: Erro ao salvar a edição da postagem**<br>1. O sistema exibe uma mensagem de erro<br>2. O administrador pode tentar salvar novamente ou cancelar a edição |
+| **Fluxo Principal** | 1. O administrador acessa a área de gerenciamento de postagens<br> 2. O sistema exibe a opção de "Criar nova postagem" e lista as postagens publicadas <br> 3. O administrador seleciona criar uma postagem (**FA1**)(**FA2**)<br> 4. O sistema exibe o formulário para criar uma postagem<br> 5. O administrador preenche os campos de título e conteúdo<br> 6. O administrador clica em "Publicar" (**FE1**) <br> 7. O sistema valida os dados inseridos<br> 8. O sistema armazena a nova postagem no banco de dados e exibe uma mensagem de confirmação da publicação |
+| **Fluxo Alternativo** | **FA01: O administrador escolhe excluir a postagem**<br>1. O administrador clica em "Excluir" em uma postagem publicada (**FE2**)<br>2. O sistema solicita confirmação de exclusão <br>3. O administrador confirma a exclusão <br>4. O sistema remove a postagem da exibição pública e do banco de dados <br> 5. O sistema exibe mensagem de confirmação de exclusão <br><br> **FA02: O administrador escolhe editar a postagem**<br>  1. O administrador clica em "Editar" em uma postagem publicada <br> 2. O sistema carrega o conteúdo atual em modo de edição <br> 3. O administrador modifica os campos desejados <br> 4. O administrador salva as alterações (**FE3**) <br> 5. O sistema valida as alterações  <br> 6. O sistema atualiza a postagem e exibe uma mensagem de sucesso |
+| **Fluxo de Exceção** | **FE01 - Dados inválidos na criação** <br> 1. O sistema detecta campos obrigatórios não preenchidos ou inválidos <br> 2. Exibe mensagem específica por campo com erro <br> 3. Mantém o formulário aberto com os dados preenchidos <br> 4. Volta ao passo 4 do fluxo principal <br><br> **FE02 - Postagem não encontrada** <br> 1. O sistema não localiza a postagem para edição/exclusão <br> 2. Exibe: "Postagem não disponível" <br> 3. Volta ao passo 3 do fluxo principal <br><br> **FE03 - Erro ao salvar edição** <br> 1. Ocorre falha durante o salvamento das alterações <br> 2. O sistema exibe: "Falha ao atualizar. Tente novamente." <br> 3. Oferece opção de "tentar novamente" ou "cancelar" <br> 4.1 O Administrador escolhe "tentar novamente" e volta ao passo 2 do FA1 <br> 4.2 O Administrador escolhe "cancelar" e volta ao passo 3 fluxo principal |
+
+<font size="3"><p style="text-align: center"><b>Autor:</b> [Gabriel Fernando De Jesus Silva][MMcLovin], 2025</p></font>
 
 ### UC09 - Interagir com LLM
+
+<font size="3"><p style="text-align: center"><b>Tabela 10: especificação do caso de uso UC09</b> </p></font>
+
 |  |  |
 |--------------------|-----------------------------------------------|
 | **Descrição**      | O usuário deseja interagir com o sistema de IA generativa |
@@ -189,19 +228,15 @@ Autor: Caio Habibe
 | **Fluxo Alternativo** | **FA01: O usuário cria um novo chat**<br>1. O usuário adiciona o título do novo chat<br>2. O usuário clica no botão de criar novo chat<br>3. O sistema cria um novo chat|
 | **Fluxo de Exceção** | **FE01: O usuário excedeu o limite de mensagens diárias**<br>1. O sistema mostra uma mensagem sinalizando que o usuário está com o limite de mensagens excedido<br><br>**FE02: O sistema não consegue gerar uma resposta**<br>1. O sistema exibe uma mensagem sinalizando a indisponibilidade temporária do uso de IA generativa|
 
-Autor: Caio Felipe
+<font size="3"><p style="text-align: center"><b>Autor:</b> [Caio Felipe Rocha][caio-felipee], 2025</p></font>
 
 ## Histórico de Versão
 
 | Versão | Data | Alterações Principais | Autor(es) |
 | ------ | ---- | --------------------- | :-------: |
-| 1.0.0  | 06-05-2025 | Adição de fundamentação teórica                | Arthur Ribeiro, Mateus Vieira, Caio Felipe <br> Caio Habibe, Caio Lamego, Gabriel Fernando <br> Rafael Matuda   |
-| 1.0.1  | 06-05-2025 | Adição do UC02 e UC04 | Caio Lamego, Rafael Matuda |
-| 1.0.2  | 06-05-2025 | Adição do UC09 | Caio Felipe |
-| 1.0.3  | 06-05-2025 | Adição do UC05 | Arthur Ribeiro |
-| 1.0.3  | 08-05-2025 | Adição do UC06 | Pedro Henrique |
-| 1.0.4  | 06-05-2025 | Adição do UC07 | Caio Habibe |
-| 1.0.5  | 06-05-2025 | Adição do UC01 | Matheus Brant |
+| 1.0.0  | 06-05-2025 | Adição de fundamentação teórica | [Arthur Ribeiro e Sousa][artrsousa1], [Caio Falcão Habibe][CaioHabibe], [Caio Felipe Rocha][caio-felipee], [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin], [Mateus Vieira Rocha da Silva][mateusvrs], [Rafael Melo Matuda][rmatuda] |
+| 1.0.1  | 06-05-2025 | Adição do UC01, UC02, UC03, UC04, UC05, UC06, UC07, UC08, UC09 | [Arthur Ribeiro e Sousa][artrsousa1], [Caio Falcão Habibe][CaioHabibe], [Caio Felipe Rocha][caio-felipee], [Caio Magalhães Lamego][caiolamego], [Davi Araújo Bady Casseb][dcasseb], [Gabriel Fernando De Jesus Silva][MMcLovin], [Mateus Vieira Rocha da Silva][mateusvrs], [Matheus de Siqueira Brant][MatheussBrant], [Pedro Henrique Fernandino da Silva][PedroHenrique061], [Rafael Melo Matuda][rmatuda] |
+| 1.0.2  | 07-05-2025 | Correção do UC08 e adição de título e rodapé nas tabelas | [Gabriel Fernando De Jesus Silva][MMcLovin] |
 
 [artrsousa1]: https://github.com/artrsousa1  
 [CaioHabibe]: https://github.com/CaioHabibe  
@@ -213,3 +248,17 @@ Autor: Caio Felipe
 [MatheussBrant]: https://github.com/MatheussBrant  
 [PedroHenrique061]: https://github.com/PedroHenrique061  
 [rmatuda]: https://github.com/rmatuda  
+
+<!-- 
+relação dos nomes:
+[Arthur Ribeiro e Sousa][artrsousa1] 
+[Caio Falcão Habibe][CaioHabibe] 
+[Caio Felipe Rocha][caio-felipee] 
+[Caio Magalhães Lamego][caiolamego] 
+[Davi Araújo Bady Casseb][dcasseb] 
+[Gabriel Fernando De Jesus Silva][MMcLovin] 
+[Mateus Vieira Rocha da Silva][mateusvrs] 
+[Matheus de Siqueira Brant][MatheussBrant] 
+[Pedro Henrique Fernandino da Silva][PedroHenrique061] 
+[Rafael Melo Matuda][rmatuda]
+>
