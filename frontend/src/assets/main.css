@@ -7,14 +7,31 @@
 #app {
   margin: 0 auto;
   padding: 0;
-  font-weight: normal;
 }
 
 @theme {
   --color-primary-green: #53904D;
+  --color-darker-green: #4A7B4A;
   --color-secondary-green: #6C9057;
 
   --color-primary-beige: #CEC38F;
+  --color-darker-beige: #B7B18A;
+
+  --font-yrsa: 'Yrsa', sans-serif;
+  --font-weight-yrsa-light: 300;
+  --font-weight-yrsa-normal: 400;
+  --font-weight-yrsa-medium: 500;
+  --font-weight-yrsa-semibold: 600;
+  --font-weight-yrsa-bold: 700;
+  --font-weight-yrsa-extrabold: 800;
+
+  --font-sora: 'Sora', sans-serif;
+  --font-weight-sora-light: 300;
+  --font-weight-sora-normal: 400;
+  --font-weight-sora-medium: 500;
+  --font-weight-sora-semibold: 600;
+  --font-weight-sora-bold: 700;
+  --font-weight-sora-extrabold: 800;
 }
 
 @theme inline {
