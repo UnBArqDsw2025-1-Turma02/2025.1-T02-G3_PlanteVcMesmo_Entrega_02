@@ -57,29 +57,12 @@ Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores
 
 |                      |                                                                                             |
 |----------------------|---------------------------------------------------------------------------------------------|
-| **Descrição**        | Este Caso de Uso deve seguir um fluxo onde o usuário Crie uma Nova Planta no seu perfil, sendo necessário, dessa maneira, informar nome, descrição e foto, para que esta seja salva corretamente no seu perfil. |
-| **Ator(es)**         | Usuário do aplicativo "Plante Você Mesmo"                                                   |
-| **Pré-Requisitos**   | O usuário deve estar logado no aplicativo e ter acesso à funcionalidade de criação de plantas. |
-
-| **Fluxo Principal**  |
-|----------------------|
-| 1. Usuário acessa seu perfil.  |
-| 2. Usuário clica no botão de Adicionar Planta. (FA1)  |
-| 3. O usuário insere o nome, descrição da Planta.|
-| 4. O usuário faz upload da foto da planta. (FE3)|
-| 5. O usuário clica para confirmar. (FE2)|
-| 9. O sistema exibe uma confirmação de que a planta foi criada com sucesso. (FE1) |
-| 10. O usuário visualiza a nova planta em seu perfil. |
-
-| **Fluxo Alternativo** |
-|------------------------|
-| FA1. Se o usuário cancelar a criação da planta, o sistema retorna à tela inicial da área de plantas.  |
-
-| **Fluxo de Exceção** |
-|------------------------|
-| FE1. Se ocorrer um erro ao salvar a planta, o sistema exibe uma mensagem de erro. |
-| FE2. Se o usuário não preencher algum campo, o sistema solicita que o usuário preencha todos.  |
-| FE3. Se o formato da foto enviada for inválido, o sistema solicita ao usuário que envie um arquivo de imagem válido.  |
+| **Descrição**        | O Usuário deseja criar uma Nova Planta no seu perfil, sendo necessário, dessa maneira, informar nome, descrição e foto, para que esta seja salva corretamente no seu perfil. |
+| **Ator(es)**         | Usuário do aplicativo "Plante Você Mesmo"                                                                            |
+| **Pré-Requisitos**   | O usuário deve estar logado no aplicativo e ter acesso à funcionalidade de criação de plantas.   |
+| **Fluxo Principal**  | 1. Usuário acessa seu perfil. <br> 2. Usuário clica no botão de Adicionar Planta. (FA1) <br> 3. O usuário insere o nome, descrição da Planta. <br> 4. O usuário faz upload da foto da planta. (FE3) <br>  5. O usuário clica para confirmar. (FE2) <br> 6. O sistema exibe uma confirmação de que a planta foi criada com sucesso. (FE1) <br> 7. O usuário visualiza a nova planta em seu perfil.  |
+| **Fluxo Alternativo**| FA1. Se o usuário cancelar a criação da planta, o sistema retorna à tela inicial da área de plantas. |
+| **Fluxo de Exceção** | **FE01: Campo Não Preenchido**<br>1. Se o usuário não preencher algum campo, o sistema solicita que o usuário preencha todos.<br><br>**FE02: Falha ao salvar**<br>1. Se ocorrer um erro ao salvar a planta, o sistema exibe uma mensagem de erro. <br><br>**FE03: Foto Inválida**<br>1. Se o formato da foto enviada for inválido, o sistema solicita ao usuário que envie um arquivo de imagem válido. |
 
 <font size="3"><p style="text-align: center"><b>Autor:</b> [Caio Magalhães Lamego][caiolamego], 2025</p></font>
 
