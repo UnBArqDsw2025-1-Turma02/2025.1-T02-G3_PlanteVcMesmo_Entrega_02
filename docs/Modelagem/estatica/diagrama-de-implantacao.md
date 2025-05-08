@@ -6,9 +6,13 @@ O Diagrama de Implantação é uma representação visual da arquitetura física
 
 Ele é essencial para entender onde e como cada parte do sistema está hospedada e como se comunicam entre si, além de ajudar a identificar gargalos de infraestrutura, dependências físicas e facilitar operações de deploy e manutenção.
 
+
 ## Diagrama UML
+<font size="3"><p style="text-align: center"><b>Figura 8: Diagrama de Implantação</b></p></font>
 
 ![Diagrama de Implantação](../../assets/diagrama-implantacao.png)
+
+<font size="3"><p style="text-align: center"><b>Autores:</b> [Matheus de Siqueira Brant][MatheussBrant], [Rafael Melo Matuda][rmatuda], 2025</p></font>
 
 Descrição: O Diagrama de Implantação apresenta a arquitetura física do sistema, que é composta por dois ambientes principais: o Ambiente de Desenvolvimento (máquina local do desenvolvedor) e o Ambiente Cloud (ambiente de produção).
 
@@ -24,6 +28,11 @@ A comunicação ocorre via REST API Calls (HTTP) entre o Frontend e a API backen
 
 ## Histórico de Versão
 
-| Versão | Data       | Alterações Principais                                      | Autor(es)                                   |
-|--------|------------|------------------------------------------------------------|:------------------------------------------:|
-| 1.0.0  | 08-05-2025 | Criação inicial do diagrama e descrição completa do sistema | Matheus Brant, Rafael Matuda                               |
+| Versão | Data       | Alterações Principais            | Autor(es)                                   |
+|--------|------------|:---------------------- ---------:| |
+| 1.0.0  | 08-05-2025 | Criação inicial do diagrama e descrição completa do sistema | [Matheus de Siqueira Brant][MatheussBrant], [Rafael Melo Matuda][rmatuda] |
+| 1.0.1  | 08-05-2025 | Padronização de links                                       | [Gabriel Fernando De Jesus Silva][MMcLovin]     
+
+[MatheussBrant]: https://github.com/MatheussBrant
+[rmatuda]: https://github.com/rmatuda
+[MMcLovin]: https://github.com/MMcLovin

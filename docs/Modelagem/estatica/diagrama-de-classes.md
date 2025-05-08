@@ -8,7 +8,7 @@ Ele é especialmente útil na fase de análise e design do sistema,pois facilita
 
 ## Rascunhos
 
-Para auxiliar na construção do diagrama de classes, foi acordado que cada membro produziria indivudualmente um rascunho inicial para servir como auxílio da construção do diagrama de classes final. Abaixo estão os rascunhos produzidos pelos membros da equipe.
+Para auxiliar na construção do diagrama de classes, foi acordado que cada membro produziria indivudualmente um rascunho inicial (Figuras 1 a 5) para servir como auxílio da construção do diagrama de classes final (Figura 6). Abaixo estão os rascunhos produzidos pelos membros da equipe.
 
 ### Rascunho 1
 
@@ -71,7 +71,7 @@ Para auxiliar na construção do diagrama de classes, foi acordado que cada memb
 | 1.0.0  | 06-05-2025 | Adição de fundamentação teórica                | [Arthur Ribeiro e Sousa][artrsousa1], [Caio Falcão Habibe][CaioHabibe], [Caio Felipe Rocha][caio-felipee] |
 | 1.0.1  | 06-05-2025 | Adição do diagrama final | [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin] <br> [Rafael Melo Matuda][rmatuda], [Matheus de Siqueira Brant][MatheussBrant] |
 | 1.0.2  | 06-05-2025 | Adição dos rascunhos | [Arthur Ribeiro e Sousa][artrsousa1], [Caio Falcão Habibe][CaioHabibe], [Caio Felipe Rocha][caio-felipee] <br> [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin] <br> [Rafael Melo Matuda][rmatuda], [Matheus de Siqueira Brant][MatheussBrant], [Mateus Vieira Rocha da Silva][mateusvrs] |
-| 1.0.3  | 08-05-2025 | Padronização dos títulos e rodapé das imagens | [Gabriel Fernando De Jesus Silva][MMcLovin] |
+| 1.0.3  | 08-05-2025 | Padronização dos títulos e rodapé das imagens e inlcui chamada às figuras | [Gabriel Fernando De Jesus Silva][MMcLovin] |
 
 [artrsousa1]: https://github.com/artrsousa1  
 [CaioHabibe]: https://github.com/CaioHabibe  

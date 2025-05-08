@@ -10,7 +10,7 @@ O diagrama de estados é útil para modelar sistemas orientados a eventos por co
 
 Para alcançar a realização do Diagrama de Estados, nos dedicamos um tempo para fazer rascunhos individuais do mesmo (Figuras 1 a 4), como um tipo de estudo e inicialização do processo:
 
-<font size="3"><p style="text-align: center"><b>Figura 1: Diagrama de Estados (Rascunho Caio Lamego - estada da postagem)</b></p></font>
+<font size="3"><p style="text-align: center"><b>Figura 1: Rascunho do Diagrama de Estados de uma postagem</b></p></font>
 
 ![Diagrama de Estados Caio Lamego - 1](../../assets/rascunho-estados-caio-lamego-1.png)
 
@@ -18,7 +18,7 @@ Para alcançar a realização do Diagrama de Estados, nos dedicamos um tempo par
 
 ---
 
-<font size="3"><p style="text-align: center"><b>Figura 2: Diagrama de Estados (Rascunho Caio Lamego - agendando evento)</b></p></font>
+<font size="3"><p style="text-align: center"><b>Figura 2: Rascunho do Diagrama de Estados para um agendamento</b></p></font>
 
 ![Diagrama de Estados Caio Lamego - 1](../../assets/rascunho-estados-caio-lamego-2.png)
 
@@ -26,7 +26,7 @@ Para alcançar a realização do Diagrama de Estados, nos dedicamos um tempo par
 
 ---
 
-<font size="3"><p style="text-align: center"><b>Figura 3: Diagrama de Estados (Rascunho Davi)</b></p></font>
+<font size="3"><p style="text-align: center"><b>Figura 3: Rascunho do Diagrama de Estados de uma Planta</b></p></font>
 
 ![Diagrama de Estados Davi](../../assets/rascunho-estados-davi.png)
 
@@ -34,7 +34,7 @@ Para alcançar a realização do Diagrama de Estados, nos dedicamos um tempo par
 
 ---
 
-<font size="3"><p style="text-align: center"><b>Figura 4: Diagrama de Estados (Rascunho Rafael Matuda)</b></p></font>
+<font size="3"><p style="text-align: center"><b>Figura 4: Rascunho do Diagrama de Estados da Planta</b></p></font>
 
 ![Diagrama de Estados Rafael Matuda](../../assets/rascunho-estados-matuda.png)
 
@@ -89,7 +89,7 @@ Para alcançar a realização do Diagrama de Estados, nos dedicamos um tempo par
 | 1.0.0  | 06-05-2025 | Adição de fundamentação teórica                | [Arthur Ribeiro e Sousa][artrsousa1], [Mateus Vieira Rocha da Silva][mateusvrs], [Caio Felipe Rocha][caio-felipee] <br> [Caio Falcão Habibe][CaioHabibe], [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin] <br> [Rafael Melo Matuda][rmatuda] |
 | 1.0.1  | 06-05-2025 | Adição dos diagramas finais | [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin] <br> [Rafael Melo Matuda][rmatuda], [Matheus de Siqueira Brant][MatheussBrant] |
 | 1.0.2  | 06-05-2025 | Adição dos rascunho | [Arthur Ribeiro e Sousa][artrsousa1], [Mateus Vieira Rocha da Silva][mateusvrs], [Caio Felipe Rocha][caio-felipee] <br> [Caio Falcão Habibe][CaioHabibe], [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin] <br> [Rafael Melo Matuda][rmatuda], [Matheus de Siqueira Brant][MatheussBrant] |
-| 1.0.3  | 08-05-2025 | Adiciona título e rodapé às figuras | [Gabriel Fernando De Jesus Silva][MMcLovin] |
+| 1.0.3  | 08-05-2025 | Adiciona título, rodapé às figuras e chamada às figuras | [Gabriel Fernando De Jesus Silva][MMcLovin] |
 
 
 [artrsousa1]: https://github.com/artrsousa1  

@@ -10,7 +10,7 @@ O Diagrama de Sequência pode ser utilizado em diferentes fases do desenvolvimen
 
 Para alcançar o Diagrama de Sequência final (Figura 3) nos dedicamos um tempo para fazer rascunhos individuais do mesmo (Figuras 1 e 2), como um tipo de estudo e inicialização do processo:
 
-<font size="3"><p style="text-align: center"><b>Figura 1: Rascunho de Diagrama de Sequência por Davi</b></p></font>
+<font size="3"><p style="text-align: center"><b>Figura 1: Rascunho 1 do Diagrama de Sequência</b></p></font>
 
 ![Diagrama de Sequencia Davi Casseb](../../assets/rascunho-sequencia-davi.png)
 
@@ -18,7 +18,7 @@ Para alcançar o Diagrama de Sequência final (Figura 3) nos dedicamos um tempo 
 
 ---
 
-<font size="3"><p style="text-align: center"><b>Figura 2: Rascunho de Diagrama de Sequência por Mateus Vieira</b></p></font>
+<font size="3"><p style="text-align: center"><b>Figura 2: Rascunho 2 do Diagrama de Sequência</b></p></font>
 
 ![Diagrama de Sequencia Mateus Vieira](../../assets/rascunho-sequencia-mateus.png)
 
@@ -31,7 +31,7 @@ Para alcançar o Diagrama de Sequência final (Figura 3) nos dedicamos um tempo 
 
 **Descrição**: O Diagrama de Sequência do projeto enfatiza a ordem temporal das mensagens trocadas pelos objetos. Nesse caso temos o *User*, *Post*, *Plant*, *EventSchedule*, *ChatGroup* e *InteractionLLM*. O *User* representa o processo de registro com o Google OAuth e o retorno do JWT. Os objetos *ChatGroup* e *InteractionLLM* representam o início de uma conversa entre o usuário, a API e o sistema externo de AI/LLM para dar as respectivas respostas. Além disso, temos o *Post* que gerencia o processo de curtir postagens, pesquisar e gerenciar o conteúdo do Plante Vc Mesmo. Por fim, temos os objetos *Plant* e *EventSchedule* que gerenciam o cadastro de novas plantas para poder receber lembretes a partir do Google Agenda
 
-<font size="3"><p style="text-align: center"><b>Figura 3: Diagrama UML de Sequência (Final)</b></p></font>
+<font size="3"><p style="text-align: center"><b>Figura 3: Diagrama UML de Sequência Final</b></p></font>
 
 ![Diagrama de Sequencia](../../assets/diagrama-sequencia.png)
 
