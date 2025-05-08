@@ -24,11 +24,42 @@ Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores
 
 ## Tabela de Casos de Uso
 
-| Código | Nome do caso de uso |
-|--------|---------------------|
-|  UC02  |    Criação de Plantas  |
-|  UC05  |    Login na Google  |
-|  UC09  |    Interagir com LLM  |
+| Código | Nome do caso de uso        |
+|--------|----------------------------|
+| UC01   | Gerenciar Calendário       |
+| UC02   | Criação de Plantas         |
+| UC05   | Login na Google            |
+| UC09   | Interagir com LLM          |
+
+
+### UC01 - Gerenciar Calendário
+
+|                      |                                                                                             |
+|----------------------|---------------------------------------------------------------------------------------------|
+| **Descrição**        | Este Caso de Uso descreve o fluxo no qual o usuário gerencia o calendário de cuidados com suas plantas. O usuário pode visualizar o calendário, adicionar, editar e excluir avisos de cuidado, bem como receber lembretes automáticos recomendados pelo sistema. |
+| **Ator(es)**         | Usuário do aplicativo "Plante Você Mesmo"; Sistema                                          |
+| **Pré-Requisitos**   | O usuário deve estar autenticado no aplicativo e ter ao menos uma planta cadastrada para gerenciar eventos. |
+
+| **Fluxo Principal**  |
+|----------------------|
+| 1. O usuário acessa a funcionalidade de Gerenciar Calendário. |
+| 2. O usuário visualiza o calendário com os eventos já cadastrados. |
+| 3. O usuário escolhe entre adicionar, editar ou excluir um aviso. |
+| 4. Caso adicione um aviso, o sistema recomenda automaticamente a melhor data para o cuidado da planta. (FA1) |
+| 5. O usuário pode aceitar ou modificar a data sugerida pelo sistema. |
+| 6. O sistema salva as alterações no calendário. (FE1) |
+| 7. O sistema programa o envio de lembretes conforme os avisos cadastrados. |
+| 8. O usuário recebe lembretes automáticos sobre os cuidados no momento adequado. (FE2) |
+
+| **Fluxos Alternativos** |
+|-------------------------|
+| **FA1** - O usuário pode optar por não seguir a recomendação de data e inserir manualmente a data do aviso. |
+
+| **Fluxos de Exceção**   |
+|-------------------------|
+| **FE1** - Falha ao salvar o aviso: o sistema exibe uma mensagem de erro e solicita nova tentativa. |
+| **FE2** - Falha ao enviar lembrete: o sistema registra a falha e tenta reprogramar o envio. |
+
 
 ### UC02 - Criação de Plantas
 |                      |                                                                                             |
