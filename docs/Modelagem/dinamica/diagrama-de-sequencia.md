@@ -41,9 +41,9 @@ Para alcançar o Diagrama de Sequência final (Figura 3) nos dedicamos um tempo 
 
 | Versão | Data       | Alterações Principais                             | Autor(es)        |
 |--------|------------|---------------------------------------------------|:----------------:|
-| 1.0.0  | 06-05-2025 | Adição de fundamentação teórica                | Arthur Ribeiro, Caio Habibe, Caio Felipe   |
-| 1.0.1  | 06-05-2025 | Adição dos rascunho | Arthur Ribeiro, Mateus Vieira, Caio Felipe <br> Caio Habibe, Caio Lamego, Gabriel Fernando <br> Rafael Matuda, Matheus Brant |
-| 1.0.2  | 06-05-2025 | Adição do diagrama de sequência final | Arthur Ribeiro, Mateus Vieira, Caio Felipe <br> Caio Habibe, Caio Lamego, Gabriel Fernando <br> Rafael Matuda, Matheus Brant |
+| 1.0.0  | 06-05-2025 | Adição de fundamentação teórica                | [Arthur Ribeiro e Sousa][artrsousa1], [Caio Falcão Habibe][CaioHabibe], [Caio Felipe Rocha][caio-felipee] |
+| 1.0.1  | 06-05-2025 | Adição dos rascunho | [Arthur Ribeiro e Sousa][artrsousa1], [Mateus Vieira Rocha da Silva][mateusvrs], [Caio Felipe Rocha][caio-felipee] <br> [Caio Falcão Habibe][CaioHabibe], [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin] <br> [Rafael Melo Matuda][rmatuda], [Matheus de Siqueira Brant][MatheussBrant] |
+| 1.0.2  | 06-05-2025 | Adição do diagrama de sequência final | [Arthur Ribeiro e Sousa][artrsousa1], [Mateus Vieira Rocha da Silva][mateusvrs], [Caio Felipe Rocha][caio-felipee] <br> [Caio Falcão Habibe][CaioHabibe], [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin] <br> [Rafael Melo Matuda][rmatuda], [Matheus de Siqueira Brant][MatheussBrant] |
 
 [artrsousa1]: https://github.com/artrsousa1  
 [CaioHabibe]: https://github.com/CaioHabibe  

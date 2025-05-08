@@ -183,7 +183,7 @@ Escolhemos alguns dos principais casos de uso para que cada membro fizesse uma e
 ## Histórico de Versão
 
 | Versão | Data | Alterações Principais | Autor(es) |
-| ------ | ---- | --------------------- | :-------: |
+| ------ | ---- | --------------------- | ------- |
 | 1.0.0  | 06-05-2025 | Adição de fundamentação teórica | [Arthur Ribeiro e Sousa][artrsousa1], [Caio Falcão Habibe][CaioHabibe], [Caio Felipe Rocha][caio-felipee], [Caio Magalhães Lamego][caiolamego], [Gabriel Fernando De Jesus Silva][MMcLovin], [Mateus Vieira Rocha da Silva][mateusvrs], [Rafael Melo Matuda][rmatuda] |
 | 1.0.1  | 06-05-2025 | Adição do UC01, UC02, UC03, UC04, UC05, UC06, UC07, UC08, UC09 | [Arthur Ribeiro e Sousa][artrsousa1], [Caio Falcão Habibe][CaioHabibe], [Caio Felipe Rocha][caio-felipee], [Caio Magalhães Lamego][caiolamego], [Davi Araújo Bady Casseb][dcasseb], [Gabriel Fernando De Jesus Silva][MMcLovin], [Mateus Vieira Rocha da Silva][mateusvrs], [Matheus de Siqueira Brant][MatheussBrant], [Pedro Henrique Fernandino da Silva][PedroHenrique061], [Rafael Melo Matuda][rmatuda] |
 | 1.0.2  | 07-05-2025 | Correção do UC08 e adição de título e rodapé nas tabelas | [Gabriel Fernando De Jesus Silva][MMcLovin] |
