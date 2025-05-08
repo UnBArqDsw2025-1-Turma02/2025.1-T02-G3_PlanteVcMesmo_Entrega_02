@@ -136,9 +136,22 @@ Autor: Rafael Matuda
 | **Pré-Requisitos** | O usuário já deve possuir uma conta na Google |
 | **Fluxo Principal** | 1. O usuário acessa a tela de login<br> 2. O usuário clica no botão "Login com Google"<br> 3. O usuário é redirecionado para a página de autenticação do Google<br> 4. O usuário a conta desejada e informa a sua senha<br> 5. O Google autentica o usuário e redireciona de volta com um token de autorização<br> 6. O sistema busca os dados do usuário nas API's da Google<br> 7. O sistema gera uma sessão e redireciona o usuário para a página inicial   |
 | **Fluxo Alternativo** | **FA01:** O usuário cancela a autorização na tela do Google e o sistema retorna para a tela de login sem a autenticação |
-| **Fluxo de Exceção** | **FE01:** O token informado é inválido ou expirado eo sistema exibe uma mensagem de erro |
+| **Fluxo de Exceção** | **FE01:** O token informado é inválido ou expirado e o sistema exibe uma mensagem de erro |
 
 Autor: Arthur Ribeiro
+
+### UC07 - Interagir com postagem
+
+|  |  |
+|--------------------|-----------------------------------------------|
+| **Descrição**          | O usuário deseja interagir com uma postagem. |
+| **Ator(es)**           | Usuário autenticado                                             |
+| **Pré-Requisitos**     | O usuário deve estar autenticado e visualizar uma postagem disponível para interação. |
+| **Fluxo Principal**    | 1. O usuário acessa a postagem.<br>2. O sistema exibe as opções de interação (curtir, comentar, compartilhar).<br>3. O usuário seleciona uma das opções de interação.<br>4. O sistema registra a interação e atualiza a postagem em tempo real. |
+| **Fluxo Alternativo**  | **FA01**: O usuário decide cancelar a interação antes de confirmar.<br>**FA02**: O usuário escolhe mais de uma opção de interação (por exemplo, curtir e comentar). O sistema registra todas as interações realizadas. |
+| **Fluxo de Exceção**   | **FE01**: Ocorre uma falha de conexão: o sistema exibe uma mensagem de erro e orienta o usuário a tentar novamente. |
+
+Autor: Caio Habibe
 
 ### UC09 - Interagir com LLM
 |  |  |
