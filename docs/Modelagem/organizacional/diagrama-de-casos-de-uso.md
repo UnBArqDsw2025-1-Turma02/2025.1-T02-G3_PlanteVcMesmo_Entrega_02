@@ -86,39 +86,14 @@ Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores
 
 <font size="3"><p style="text-align: center"><b>Tabela 5: especificação do caso de uso UC04</b> </p></font>
 
-|  |  |
-|--------------------|-----------------------------------------------|
-| **Descrição**      | Permite que o usuário crie uma conta no sistema “Plante Você Mesmo” para acessar funcionalidades como registro de plantações, acompanhamento e dicas personalizadas. |
-| **Ator(es)**       | Usuário (pessoa interessada em plantar), Sistema |
-| **Pré-Requisitos** | O usuário deve ter acesso à internet e dispor de um dispositivo compatível (celular, tablet ou computador). |
-
-| **Fluxo Principal** | 
-|------------------------| 
-|1. O usuário acessa a página inicial do sistema. | 
-|2. O usuário seleciona a opção “Cadastrar-se”. | 
-|3. O sistema apresenta o formulário de cadastro.|  
-|4. O usuário preenche os campos obrigatórios (nome, e-mail, senha, etc.).|  
-|5. O usuário confirma o cadastro.|  
-|6. O sistema valida as informações. | 
-|7. O sistema cria a conta e exibe mensagem de sucesso.  |
-|8. O usuário é redirecionado para a tela inicial logado no sistema. |
-
-| **Fluxo Alternativo** |
-|------------------------|  
-FA01. (Após FP04) O usuário opta por se cadastrar usando redes sociais (Google, Facebook).  
-→ O sistema redireciona para a autenticação da rede social.  
- → Após a autenticação, o sistema cria a conta automaticamente e exibe mensagem de sucesso. |
-
-| **Fluxo de Exceção** |
-|------------------------|  
-FE01. (No FP06) O e-mail informado já está cadastrado.  
-→ O sistema exibe mensagem de erro e solicita um novo e-mail.  
-
-FE02. (No FP06) O usuário deixa campos obrigatórios em branco.  
-→ O sistema exibe mensagens de validação e impede o avanço até que sejam corrigidos.  
-
-FE03. (No FP06) Falha na conexão com o servidor.  
-→ O sistema exibe mensagem de erro e solicita que o usuário tente novamente mais tarde. |
+|                      |                                                                                                                                                                                                                                                                     |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Descrição**        | Permite que o usuário crie uma conta no sistema “Plante Você Mesmo” para acessar funcionalidades como registro de plantações, acompanhamento e dicas personalizadas.                                                                                                     |
+| **Ator(es)**         | Usuário (pessoa interessada em plantar), Sistema                                                                                                                                                                                                                        |
+| **Pré-Requisitos**   | O usuário deve ter acesso à internet e dispor de um dispositivo compatível (celular, tablet ou computador).                                                                                                                                                              |
+| **Fluxo Principal**  | 1. O usuário acessa a página inicial do sistema. <br> 2. O usuário seleciona a opção “Cadastrar-se”. <br> 3. O sistema apresenta o formulário de cadastro. <br> 4. O usuário preenche os campos obrigatórios (nome, e-mail, senha, etc.). <br> 5. O usuário confirma o cadastro. <br> 6. O sistema valida as informações. <br> 7. O sistema cria a conta e exibe mensagem de sucesso. <br> 8. O usuário é redirecionado para a tela inicial logado no sistema. |
+| **Fluxo Alternativo**| FA01. Após o passo 4, o usuário opta por se cadastrar usando redes sociais (Google, Facebook). <br> 1. O sistema redireciona para a autenticação da rede social. <br> 2. Após a autenticação, o sistema cria a conta automaticamente e exibe mensagem de sucesso. |
+| **Fluxo de Exceção** | **FE01: E-mail já cadastrado** <br> 1. No passo 6, se o e-mail informado já estiver cadastrado, o sistema exibe mensagem de erro e solicita um novo e-mail. <br><br> **FE02: Campos obrigatórios em branco** <br> 1. No passo 6, se o usuário deixar campos obrigatórios em branco, o sistema exibe mensagens de validação e impede o avanço até que sejam corrigidos. <br><br> **FE03: Falha na conexão** <br> 1. No passo 6, se ocorrer falha na conexão com o servidor, o sistema exibe mensagem de erro e solicita que o usuário tente novamente mais tarde. |
 
 <font size="3"><p style="text-align: center"><b>Autor:</b> [Rafael Melo Matuda][rmatuda], 2025</p></font>
 
