@@ -144,6 +144,19 @@ Autor: Rafael Matuda
 
 Autor: Arthur Ribeiro
 
+### UC06 - Criar postagem
+
+|  |  |
+|--------------------|-----------------------------------------------|
+| **Descrição**      | O usuário deseja criar uma nova postagem para compartilhar conteúdo na plataforma |
+| **Ator(es)**       | Usuário |
+| **Pré-Requisitos** | O usuário deve possuir uma conta ativa e estar autenticado no sistema |
+| **Fluxo Principal** | 1. O usuário acessa a interface de criação de postagem<br>2.O sistema exibe o formulário de nova postagem<br>3. O usuário preenche os campos obrigatórios (título, conteúdo)<br>4.  O usuário adiciona, se desejar, imagens ou categorias <br>5. O usuário clica no botão “Publicar”<br>6. O sistema valida os dados inseridos<br>7. O sistema salva a postagem no banco de dados<br>8.O sistema exibe uma mensagem de sucesso confirmando a criação da postagem |
+| **Fluxo Alternativo** | **FA01: O usuário salva a postagem como rascunho**<br>1.  O usuário preenche parcialmente o formulário<br>2. O usuário clica no botão “Salvar como rascunho”<br>3. O sistema salva os dados incompletos como rascunho<br>4 .O sistema confirma que o rascunho foi salvo com sucesso|
+| **Fluxo de Exceção** | **FE01: Dados obrigatórios não preenchidos**<br>1. O sistema identifica que título ou conteúdo não foram preenchidos<br>2 .O sistema exibe uma mensagem de erro solicitando o preenchimento dos campos obrigatórios<br><br>**FE02:  Falha ao salvar a postagem**<br>1. O sistema tenta salvar a postagem, mas ocorre um erro no banco de dados<br>2 .O sistema exibe uma mensagem de erro informando que não foi possível concluir a operação e sugere tentar novamente mais tarde|
+
+Autor: Pedro Henrique
+
 ### UC07 - Interagir com postagem
 
 |  |  |
@@ -186,6 +199,7 @@ Autor: Caio Felipe
 | 1.0.1  | 06-05-2025 | Adição do UC02 e UC04 | Caio Lamego, Rafael Matuda |
 | 1.0.2  | 06-05-2025 | Adição do UC09 | Caio Felipe |
 | 1.0.3  | 06-05-2025 | Adição do UC05 | Arthur Ribeiro |
+| 1.0.3  | 08-05-2025 | Adição do UC06 | Pedro Henrique |
 | 1.0.4  | 06-05-2025 | Adição do UC07 | Caio Habibe |
 | 1.0.5  | 06-05-2025 | Adição do UC01 | Matheus Brant |
 
