@@ -7,20 +7,9 @@ Na UML, os diagramas de caso de uso modelam o comportamento de um sistema e ajud
 Esse diagrama é especialmente útil nas fases iniciais do desenvolvimento, como levantamento de requisitos e análise, pois facilita a identificação dos principais objetivos do sistema do ponto de vista do usuário. Ao ilustrar as interações entre os atores (usuários ou outros sistemas) e os casos de uso, o Diagrama de Casos de Uso proporciona uma visão clara e de alto nível sobre o que o sistema deve realizar.
 
 ## Diagrama UML
+
 ![Diagrama de Casos de Uso](../../assets/diagrama-uc.png)
 Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores: Usuário, Administrador, Google Cloud e LLM. O Usuário gerencia plantas, realiza cadastro/login, visualiza fórum, interage com LLM, cria postagem e etc. Já o Administrador tem funções essenciais como adicionar, editar e excluir postagens. Por fim, há a interação do sistema com os serviços externos (GoogleCloud e LLM) para suporte com funcionalidades específicas do sistema.
-
-## Template para criação de Casos de Uso
-
-### UC00 - Nome do Caso de Uso
-|  |  |
-|--------------------|-----------------------------------------------|
-| **Descrição**      | Um breve resumo do que é o caso de uso |
-| **Ator(es)**       | Quem está praticando o caso de uso                        |
-| **Pré-Requisitos** | O que é necessário para que ele ocorra |
-| **Fluxo Principal** | Sequência de passos normal do caso de uso e os fluxos alternativaos e de execção a frente do passo que eles podem ocorrer |
-| **Fluxo Alternativo** | É um caminho diferente que o usuário pode seguir para completar a mesma tarefa, geralmente devido a uma escolha ou condição específica. |
-| **Fluxo de Exceção** | É o caminho que o sistema segue quando ocorre um erro ou uma condição inesperada, exigindo uma ação corretiva. |
 
 ## Tabela de Casos de Uso
 
@@ -28,9 +17,10 @@ Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores
 |--------|----------------------------|
 | UC01   | Gerenciar Calendário       |
 | UC02   | Criação de Plantas         |
+| UC04   | Realizar Cadastro          |
 | UC05   | Login na Google            |
+| UC05   | Interagir com postagem     |
 | UC09   | Interagir com LLM          |
-
 
 ### UC01 - Gerenciar Calendário
 
@@ -59,6 +49,8 @@ Descrição: O Diagrama de Caso de Uso do Plante Vc Mesmo! contém quatro atores
 |-------------------------|
 | **FE1** - Falha ao salvar o aviso: o sistema exibe uma mensagem de erro e solicita nova tentativa. |
 | **FE2** - Falha ao enviar lembrete: o sistema registra a falha e tenta reprogramar o envio. |
+
+Autor: Matheus Brant
 
 
 ### UC02 - Criação de Plantas
@@ -166,6 +158,12 @@ Autor: Caio Habibe
 Autor: Caio Felipe
 
 ## Histórico de Versão
+
 | Versão | Data       | Alterações Principais                             | Autor(es)        |
 |--------|------------|---------------------------------------------------|:----------------:|
 | 1.0.0  | 06-05-2025 | Adição de fundamentação teórica                | Arthur Ribeiro, Mateus Vieira, Caio Felipe <br> Caio Habibe, Caio Lamego, Gabriel Fernando <br> Rafael Matuda   |
+| 1.0.1  | 06-05-2025 | Adição do UC02 e UC04 | Caio Lamego, Rafael Matuda |
+| 1.0.2  | 06-05-2025 | Adição do UC09 | Caio Felipe |
+| 1.0.3  | 06-05-2025 | Adição do UC05 | Arthur Ribeiro |
+| 1.0.4  | 06-05-2025 | Adição do UC07 | Caio Habibe |
+| 1.0.5  | 06-05-2025 | Adição do UC01 | Matheus Brant |
